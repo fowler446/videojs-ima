@@ -550,7 +550,6 @@ Controller.prototype.setContentWithAdTag =
     function(contentSrc, adTag) {
   this.reset();
   this.settings.adTagUrl = adTag ? adTag : this.settings.adTagUrl;
-  this.playerWrapper.changeSource(contentSrc);
 };
 
 
@@ -568,7 +567,6 @@ Controller.prototype.setContentWithAdsResponse =
   this.reset();
   this.settings.adsResponse =
       adsResponse ? adsResponse : this.settings.adsResponse;
-  this.playerWrapper.changeSource(contentSrc);
 };
 
 /**
