@@ -2416,7 +2416,6 @@ Controller.prototype.onPlayerVolumeChanged = function (volume) {
 Controller.prototype.setContentWithAdTag = function (contentSrc, adTag) {
   this.reset();
   this.settings.adTagUrl = adTag ? adTag : this.settings.adTagUrl;
-  this.playerWrapper.changeSource(contentSrc);
 };
 
 /**
